@@ -98,9 +98,16 @@ public:
         high2 = s.high2;
 
     }
-    
-    // move 
-    SA(const SA<T> &&s): p(s.p){};
+    // move constructor
+     SA(SA<T> && s)
+    {
+        low = s.low;
+        high = s.high;
+        low2 = s.low2;
+        high2 = s.high2;
+        p = s.p;
+        s.p = nullptr;
+    }
     
     // destructor
 
