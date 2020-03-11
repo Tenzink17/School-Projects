@@ -81,9 +81,8 @@ public class DoublyLinkedList<AnyType> implements List<AnyType>
     return true;
   }
 
-  /*
-      add method, the index can be a value from 0 to size()
-   */
+ //  add method, the index can be a value from 0 to size()
+      
   public void add(int index, AnyType newValue)
   {
       Node<AnyType> node = getNode( index, 0, size( ) );
