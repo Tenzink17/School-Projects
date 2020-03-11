@@ -306,7 +306,11 @@ int main()
 {
     SA<int> a(2,3);
     SA<int> b(3,2);
+    
+    SA<int> c;
 
+    SA<int> d = std::move(c);  //  now c->p==nullptr 
+    
     a(1,1) = 1;
     a(1,2) = 2;
     a(1,0) = 0;
