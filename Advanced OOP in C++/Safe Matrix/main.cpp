@@ -98,6 +98,10 @@ public:
         high2 = s.high2;
 
     }
+    
+    // move 
+    SA(const SA<T> &&s): p(s.p){};
+    
     // destructor
 
     ~SA()
